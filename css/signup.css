@@ -1,3 +1,19 @@
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * @author Nicolas Penagos Montoya
+ * nicolas.penagosm98@gmail.com
+ * 
+ * @author Valentina Zapata Zapata
+ * valzapataz@gmail.com
+ *
+ * @author Nathalia Escobar
+ * nataliaescfer@gmail.com
+ *
+ * @author Wilson Suarez
+ * wilsonsuarez40@gmail.com
+ **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+
 /*
 * Styles
 */
@@ -11,6 +27,7 @@ html, body {
 body{
     background-size: 100% 100%;
 }
+
 .main {
     height: 100%;
     width: 100%;
@@ -25,8 +42,8 @@ body{
 
 #items{
     width: 400px;
-    height: 400px;
-    background-color:rgba(100%,100%, 100%,.4);;
+    height: 415px;
+    background-color:rgba(100%,100%, 100%,.4);
     margin: auto;
     border-radius: 30px;
     display:block; 
@@ -70,4 +87,10 @@ img#image{
     color: white;
 }
 
-
+button#toLogin{
+    background-color: rgba(100%,100%, 100%,.0);
+    border: 0px;
+    margin-top: 10px;
+    margin-left: 110px;
+    color: #2B2B2B;
+}

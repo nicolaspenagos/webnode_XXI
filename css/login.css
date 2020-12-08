@@ -1,0 +1,96 @@
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * @author Nicolas Penagos Montoya
+ * nicolas.penagosm98@gmail.com
+ * 
+ * @author Valentina Zapata Zapata
+ * valzapataz@gmail.com
+ *
+ * @author Nathalia Escobar
+ * nataliaescfer@gmail.com
+ *
+ * @author Wilson Suarez
+ * wilsonsuarez40@gmail.com
+ **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+
+/*
+* Styles
+*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-y:hidden!important;
+}
+
+body{
+    background-size: 100% 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    align-items: center;
+}
+
+#items{
+    width: 400px;
+    height: 400px;
+    background-color:rgba(100%,100%, 100%,.4);
+    margin: auto;
+    border-radius: 30px;
+    display:block; 
+}
+
+div#imageContainer{
+    margin-top: 40px;
+    margin-left: 81px;
+    height: 10px;
+    width: 237px;
+    display:inline-block;
+}
+
+img#image{
+    opacity: 0.5;
+}
+
+.input{
+    background-color: #222222;
+    margin-top: 10px;
+    margin-left: 81px;
+    width: 225px;
+    height: 35px;
+    border-radius: 9px;
+    padding-left: 10px;
+    border: 0px;
+    color: white;
+    opacity: 0.6;
+}
+
+.button{
+    margin-top: 10px;
+    margin-left: 81px;
+    opacity: 2;
+    width: 235px;
+    height: 38px;
+    background-color: #222222;
+    border-radius: 9px;
+    border: 0px;
+    opacity: 0.9;
+    color: white;
+}
+
+button#toSingUp{
+    background-color: rgba(100%,100%, 100%,.0);
+    border: 0px;
+    margin-top: 10px;
+    margin-left: 101px;
+    color: #2B2B2B;
+}

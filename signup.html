@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login</title>
-        <link rel="stylesheet" href="css/login.css">
+        <title>SignUp</title>
+        <link rel="stylesheet" href="css/signup.css">
     </head>
     <body background="images/background.png">
         <div class = "main">
@@ -12,8 +12,9 @@
                         <img src = "images/logo.png" id="image">
                         <input id="email" class="input" placeholder="Email"></input>
                         <input id="password" type="password" class="input" placeholder="Password"></input>
-                        <button id="login" class="button">Login</button>
-                        <button id="toSingUp">Don't have an account? Sing up.</button>
+                        <input id="rePassword" type="password" class="input" placeholder="Password again"></input>
+                        <button id="signup" class="button">Sign up</button>
+                        <button id="toLogin">Already have an account? Login.</button>
                     </div>
                 </div>
             </div>
@@ -34,4 +35,4 @@
 
   firebase.initializeApp(firebaseConfig);
 </script>
-<script src="js/login.js"></script>
+<script src = "js/signup.js"></script>
