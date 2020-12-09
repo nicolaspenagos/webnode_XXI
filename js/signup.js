@@ -29,6 +29,46 @@ const signUp = document.getElementById('signup');
 const toLogin = document.getElementById('toLogin');
 
 // -------------------------------------
+// USER AUTHENTICATION
+// -------------------------------------
+var isSigningUp = false;
+
+auth.onAuthStateChanged(
+
+    (user) => {
+
+        if(user!=null){
+            if (isSigningUp) {
+
+                let emailValue = email.value;
+            
+                let userDatabase =  {
+                    id: user.uid,
+                    email: emailValue,
+                }
+
+                alert('hola')
+                database.ref('webUsers/'+userDatabase.id).set(userDatabase).then(
+                    () => {
+                        window.location.href = 'index.html';
+                    }
+                );
+
+                email.value = '';
+                password.value = '';
+                rePassword.value = '';
+
+            }else{
+
+            }
+        }
+    }
+
+);
+
+
+
+// -------------------------------------
 // EVENTS
 // -------------------------------------
 signUp.addEventListener('click', () => {
@@ -49,7 +89,10 @@ signUp.addEventListener('click', () => {
             rePassword.value = '';
 
         }else{
+
+            isSigningUp = true;
             auth.createUserWithEmailAndPassword(emailValue, passwordValue);
+
         }
 
     }else{
@@ -62,4 +105,8 @@ signUp.addEventListener('click', () => {
       
     }
 
+});
+
+toLogin.addEventListener('click', () => {
+    window.location.href = 'login.html';
 });

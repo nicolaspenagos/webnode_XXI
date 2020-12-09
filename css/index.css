@@ -1,0 +1,34 @@
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * @author Nicolas Penagos Montoya
+ * nicolas.penagosm98@gmail.com
+ * 
+ * @author Valentina Zapata Zapata
+ * valzapataz@gmail.com
+ *
+ * @author Nathalia Escobar
+ * nataliaescfer@gmail.com
+ *
+ * @author Wilson Suarez
+ * wilsonsuarez40@gmail.com
+ **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+
+/*
+* Styles
+*/
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-y:hidden!important;
+}
+
+body{
+    background-size: 100% 100%;
+}
+
+div#header{
+    width: 100%;
+    height: 30px;
+    background-color:rgba(100%,100%, 100%,.4);
+}

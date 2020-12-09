@@ -28,6 +28,19 @@ const login = document.getElementById('login');
 const toSignUp = document.getElementById('toSingUp');
 
 // -------------------------------------
+// USER AUTHENTICATION
+// -------------------------------------
+auth.onAuthStateChanged(
+    (user) => {
+
+        if (user !== null) {
+            window.location.href = 'index.html';
+        }
+
+    }
+);
+
+// -------------------------------------
 // EVENTS
 // -------------------------------------
 login.addEventListener('click', () => {
