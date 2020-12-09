@@ -47,7 +47,6 @@ auth.onAuthStateChanged(
                     email: emailValue,
                 }
 
-                alert('hola')
                 database.ref('webUsers/'+userDatabase.id).set(userDatabase).then(
                     () => {
                         window.location.href = 'index.html';

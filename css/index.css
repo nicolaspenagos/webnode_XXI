@@ -69,8 +69,17 @@ div#items{
 }
 
 div#header{
-    background-color: red;
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    background-color:transparent;
+}
+
+button#logout{
+    background-color: rgba(100%,100%, 100%,.0);
+    float: right;
+    margin-right: 20px;
+    border: solid 0px;
+    color: white;
 }
 
