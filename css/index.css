@@ -68,3 +68,9 @@ div#items{
     border-radius: 9px;
 }
 
+div#header{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
