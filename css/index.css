@@ -83,3 +83,10 @@ button#logout{
     color: white;
 }
 
+div#title1{
+    margin-left: 20px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    font-size: large;
+}
