@@ -65,13 +65,10 @@ auth.onAuthStateChanged(
 
 );
 
-
-
 // -------------------------------------
 // EVENTS
 // -------------------------------------
 signUp.addEventListener('click', () => {
-
 
     let emailValue = email.value;
     let passwordValue = password.value;

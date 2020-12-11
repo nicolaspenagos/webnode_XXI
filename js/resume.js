@@ -15,37 +15,57 @@
 
 // -------------------------------------
 // FIREBASE CONSTANTS
-// -------------------------------------
+// --------------------------------------
 const database = firebase.database();
 const auth = firebase.auth();
-
-// -------------------------------------
-// DECLARATIONS
-// -------------------------------------
-const logout = document.getElementById('logout');
-const editInvetory = document.getElementById('inventory');
-const viewResume = document.getElementById('resume');
 
 // -------------------------------------
 // USER AUTHENTICATION
 // -------------------------------------
 auth.onAuthStateChanged(
-
     (user) => {
 
-        if(user!=null){
-        
+        if (user !== null) {
+           
         }else{
             window.location.href = 'login.html';
         }
 
     }
-   
 );
 
-// -------------------------------------
+// --------------------------------------
+// DECLARATIONS
+// --------------------------------------
+const goBack = document.getElementById('goBack');
+const sales = document.getElementById('salesContainer');
+const logout = document.getElementById('logout');
+
+// --------------------------------------
 // EVENTS
+// --------------------------------------
+goBack.addEventListener('click', ()=>{
+    window.location.href = "index.html";
+});
+
 // -------------------------------------
+// DATA READING
+// -------------------------------------
+database.ref('sales/').on('value', function(data){
+
+    sales.innerHTML = '';
+    data.forEach(
+        currentSale => {
+
+            let val = currentSale.val();
+            let saleQueue = new SalesQueue(val);
+            sales.appendChild(saleQueue.render());
+
+        }
+    );
+
+});
+
 logout.addEventListener('click', ()=>{
 
     auth.signOut().then(
@@ -60,12 +80,4 @@ logout.addEventListener('click', ()=>{
         }
     );
 
-});
-
-editInvetory.addEventListener('click', () => {
-    window.location.href = 'inventory_menu.html';
-});
-
-viewResume.addEventListener('click', () => {
-    window.location.href = 'resume.html';
 });

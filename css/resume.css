@@ -1,0 +1,128 @@
+/**~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * @author Nicolas Penagos Montoya
+ * nicolas.penagosm98@gmail.com
+ * 
+ * @author Valentina Zapata Zapata
+ * valzapataz@gmail.com
+ *
+ * @author Nathalia Escobar
+ * nataliaescfer@gmail.com
+ *
+ * @author Wilson Suarez
+ * wilsonsuarez40@gmail.com
+ **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+
+/*
+* Styles
+*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-y:hidden!important;
+}
+
+body{
+    background-size: 100% 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    align-items: center;
+}
+
+div#header{
+    width: 100%;
+    height: 30px;
+}
+
+button#logout{
+    background-color: rgba(100%,100%, 100%,.0);
+    float: right;
+    margin-right: 20px;
+    border: solid 0px;
+    color: white;
+}
+
+div#items{
+    background-color:rgba(100%,100%, 100%,.125);
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    border-radius: 9px;
+}
+
+div#mainTitle{
+    background-color:rgba(100%,100%, 100%,.2);
+    height: 40px;
+    width: 100%;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+}
+
+div#title{
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    border-radius: 9px;
+    height: 40px;
+    width: 500px;
+    line-height: 40px;
+    color: white;
+}
+
+div#goBack{
+    width: 100px;
+    height: 40px;
+    margin-bottom: 40px;
+}
+
+div#salesContainer{
+    width: 600px;
+    height: 560px;
+    overflow-y: scroll;
+}
+
+.sale{
+    margin-top:15px;
+    margin-left: 15px;
+    border-radius: 9px;
+    background-color:rgba(100%,100%, 100%,.125);
+    font-family: 'Roboto', sans-serif;
+    width: 550px;
+    height: 220px;
+    color:white;
+}
+
+.id{
+    height: 30px;
+    width: 550px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.userInfo{
+    height: 52px;
+    width: 550px;
+    background-color: rgba(100%,100%, 100%,.125);
+}
+
+.text{
+    padding-left: 10px;
+}
+
+.productInfo{
+    height: 85px;
+    width: 550px;
+    background-color: rgba(100%,100%, 100%,.125);
+}

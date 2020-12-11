@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume</title>
+        <link rel="stylesheet" href="css/resume.css">
+    </head>
+    <body background="images/background_texture.png">
+        <div id="header">
+            <button id="logout">Log out</button>
+        </div>
+        <div class="main">
+            <div class="wrapper">
+                <div id="items">
+                   <div id="mainTitle">
+                        <div id="title">
+                            Sales Resume
+                        </div>
+                        <div id="goBack">
+                            <img src="images/go_back.png">
+                        </div>
+                   </div>
+                   <div id="salesContainer">
+
+                   </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+<script>
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyD7G36cH9ipnDhyzzWwRn88VJX_QCDMlt4",
+        authDomain: "xxi-database.firebaseapp.com",
+        projectId: "xxi-database",
+        storageBucket: "xxi-database.appspot.com",
+        messagingSenderId: "261738957905",
+        appId: "1:261738957905:web:c7b66cf99da05453effc70"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/resume.js"></script>
+<script src="js/components/SalesQueue.js"></script>
