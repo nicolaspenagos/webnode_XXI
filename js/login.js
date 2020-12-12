@@ -50,14 +50,13 @@ login.addEventListener('click', () => {
 
     if (emailValue != null && emailValue != '' && passwordValue != null && passwordValue != '') {
 
-        alert(passwordValue);
         auth.signInWithEmailAndPassword(emailValue, passwordValue).then(
 
             (data) => {
 
                 window.location.href = 'index.html';
-                passwordInput.value = '';
-                emailInput.value = '';
+                password.value = '';
+                email.value = '';
 
             }
 
@@ -66,8 +65,8 @@ login.addEventListener('click', () => {
             (error) => {
 
                 alert(error.message)
-                passwordInput.value = '';
-                emailInput.value = '';
+                password.value = '';
+                email.value = '';
 
             }
 

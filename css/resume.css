@@ -94,14 +94,16 @@ div#salesContainer{
 }
 
 .sale{
-    margin-top:15px;
-    margin-left: 15px;
+    margin-top:10px;
+    margin-left: 25px;
     border-radius: 9px;
     background-color:rgba(100%,100%, 100%,.125);
     font-family: 'Roboto', sans-serif;
     width: 550px;
     height: 220px;
     color:white;
+    margin-bottom: 10px;
+
 }
 
 .id{

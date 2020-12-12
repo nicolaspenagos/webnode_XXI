@@ -49,7 +49,7 @@
         let productInfo = document.createElement('div');
         productInfo.className = 'productInfo';
         let productName = document.createElement('p');
-        productName.innerHTML = this.sale.productName;
+        productName.innerHTML = 'Product: '+this.sale.productName;
         productName.className = 'text';
         let productSize = document.createElement('p');
         productSize.innerHTML = "Size: "+this.sale.size;
