@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-y:hidden!important;
+}
+
+body{
+    background-size: 100% 100%;
+}
+
+body{
+    background-size: 100% 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.wrapper {
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    align-items: center;
+}
+
+
+div#header{
+    width: 100%;
+    height: 20px;
+    background-color:transparent;
+}
+
+#items{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 30px; 
+}
+
+button#logout{
+    background-color: rgba(100%,100%, 100%,.0);
+    float: right;
+    margin-right: 20px;
+    border: solid 0px;
+    color: white;
+    border-radius: 30px;
+}
+
+div#name{
+    width: 500px;
+    margin-left: 25px;
+    background-color: rgba(100%,100%, 100%,.2);
+    margin-top: 50px;
+    margin-left: 50px;
+}
+select#nameS{
+
+    width: 500px;
+    height: 30px;
+}
+
+
+div#price{
+
+    width: 500px;
+    margin-left: 25px;
+    background-color: rgba(100%,100%, 100%,.2);
+    margin-top: 30px;
+    margin-left: 50px;
+}
+select#priceS{
+
+    width: 500px;
+    height: 30px;
+}
+
+div#size{
+
+    width: 500px;
+    margin-left: 25px;
+    background-color: rgba(100%,100%, 100%,.2);
+    margin-top: 30px;
+    margin-left: 50px;
+}
+select#sizeS{
+
+    width: 500px;
+    height: 30px;
+}
+div#quantity{
+
+    width: 500px;
+    margin-left: 25px;
+    background-color: rgba(100%,100%, 100%,.2);
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+select#quantityS{
+
+    width: 500px;
+    height: 30px;
+}
