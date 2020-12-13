@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Login</title>
-        <link rel="stylesheet" href="css/login.css">
-    </head>
-    <body background="images/background.png">
-        <div class = "main">
-            <div class = "wrapper">
-                <div id="items">
-                    <div id="imageContainer"></div>
-                        <img src = "images/logo.png" id="image">
-                        <input id="email" class="input" placeholder="Email"></input>
-                        <input id="password" type="password" class="input" placeholder="Password"></input>
-                        <button id="login" class="button">Login</button>
-                        <button id="toSingUp">Don't have an account? Sing up.</button>
-                    </div>
-                </div>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body background="images/background.png">
+    <div class="main">
+        <div class="wrapper">
+            <div id="items">
+                <div id="imageContainer"></div>
+                <img src="images/logo.png" id="image">
+                <input id="email" class="input" placeholder="Email"></input>
+                <input id="password" type="password" class="input" placeholder="Password"></input>
+                <button id="login" class="button">Login</button>
+                <button id="toSingUp">Don't have an account? Sing up.</button>
             </div>
         </div>
-    </body>
+    </div>
+    </div>
+</body>
+
 </html>
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
 <script>
-  
-  var firebaseConfig = {
-    apiKey: "AIzaSyD7G36cH9ipnDhyzzWwRn88VJX_QCDMlt4",
-    authDomain: "xxi-database.firebaseapp.com",
-    projectId: "xxi-database",
-    storageBucket: "xxi-database.appspot.com",
-    messagingSenderId: "261738957905",
-    appId: "1:261738957905:web:c7b66cf99da05453effc70"
-  };
 
-  firebase.initializeApp(firebaseConfig);
+    var firebaseConfig = {
+        apiKey: "AIzaSyD7G36cH9ipnDhyzzWwRn88VJX_QCDMlt4",
+        authDomain: "xxi-database.firebaseapp.com",
+        projectId: "xxi-database",
+        storageBucket: "xxi-database.appspot.com",
+        messagingSenderId: "261738957905",
+        appId: "1:261738957905:web:c7b66cf99da05453effc70"
+    };
+
+    firebase.initializeApp(firebaseConfig);
 </script>
 <script src="js/login.js"></script>

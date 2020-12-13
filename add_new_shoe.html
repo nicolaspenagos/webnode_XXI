@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add shoe</title>
+    <link rel="stylesheet" href="css/edit_inventory.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body background="images/background_texture.png">
+    <div id="header">
+        <button id="logout">Log out</button>
+    </div>
+    <div class="main">
+        <div class="wrapper">
+
+            <div id="items">
+                <div id="mainTitle">
+                    <div id="addItem">
+                        Add New Shoe
+                    </div>
+                    <div id="goBack">
+                        <img src="images/go_back.png">
+                    </div>
+                </div>
+                <div id="name" class="card">
+
+                    <div id="title1">
+                        Name
+                    </div>
+
+                    <input id="nameI" placeholder="Product's name"></input>
+
+                </div>
+
+                <div id="size" class="card">
+
+                    <div id="title2">
+                        Size
+                    </div>
+
+                    <select id="sizeS" name="example">
+                        <option value="8">7</option>
+                        <option value="8">7.5</option>
+                        <option value="8">8</option>
+                        <option value="8">8.5</option>
+                        <option value="8">9</option>
+                        <option value="8">9.5</option>
+                        <option value="8">10</option>
+                    </select>
+
+                </div>
+
+
+                <div id="quantity" class="card">
+
+                    <div id="title3">
+                        Quantity
+                    </div>
+
+                    <select id="quantityS" name="example">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+
+                </div>
+
+                <div id="price" class="card">
+                    <div id="title4">
+                        Price
+                    </div>
+                    <input id="priceI" placeholder="Product's price"></input>
+
+                </div>
+                <button id="addButton">Add</button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+<script>
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyD7G36cH9ipnDhyzzWwRn88VJX_QCDMlt4",
+        authDomain: "xxi-database.firebaseapp.com",
+        projectId: "xxi-database",
+        storageBucket: "xxi-database.appspot.com",
+        messagingSenderId: "261738957905",
+        appId: "1:261738957905:web:c7b66cf99da05453effc70"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/addShoe.js"></script>

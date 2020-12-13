@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>SignUp</title>
-        <link rel="stylesheet" href="css/signup.css">
-    </head>
-    <body background="images/background.png">
-        <div class = "main">
-            <div class = "wrapper">
-                <div id="items">
-                    <div id="imageContainer"></div>
-                        <img src = "images/logo.png" id="image">
-                        <input id="email" class="input" placeholder="Email"></input>
-                        <input id="password" type="password" class="input" placeholder="Password"></input>
-                        <input id="rePassword" type="password" class="input" placeholder="Password again"></input>
-                        <button id="signup" class="button">Sign up</button>
-                        <button id="toLogin">Already have an account? Login.</button>
-                    </div>
-                </div>
+
+<head>
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+
+<body background="images/background.png">
+    <div class="main">
+        <div class="wrapper">
+            <div id="items">
+                <div id="imageContainer"></div>
+                <img src="images/logo.png" id="image">
+                <input id="email" class="input" placeholder="Email"></input>
+                <input id="password" type="password" class="input" placeholder="Password"></input>
+                <input id="rePassword" type="password" class="input" placeholder="Password again"></input>
+                <button id="signup" class="button">Sign up</button>
+                <button id="toLogin">Already have an account? Login.</button>
             </div>
         </div>
-    </body>
+    </div>
+    </div>
+</body>
 </html>
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
 <script>
-  
-  var firebaseConfig = {
-    apiKey: "AIzaSyD7G36cH9ipnDhyzzWwRn88VJX_QCDMlt4",
-    authDomain: "xxi-database.firebaseapp.com",
-    projectId: "xxi-database",
-    storageBucket: "xxi-database.appspot.com",
-    messagingSenderId: "261738957905",
-    appId: "1:261738957905:web:c7b66cf99da05453effc70"
-  };
 
-  firebase.initializeApp(firebaseConfig);
+    var firebaseConfig = {
+        apiKey: "AIzaSyD7G36cH9ipnDhyzzWwRn88VJX_QCDMlt4",
+        authDomain: "xxi-database.firebaseapp.com",
+        projectId: "xxi-database",
+        storageBucket: "xxi-database.appspot.com",
+        messagingSenderId: "261738957905",
+        appId: "1:261738957905:web:c7b66cf99da05453effc70"
+    };
+
+    firebase.initializeApp(firebaseConfig);
 </script>
-<script src = "js/signup.js"></script>
+<script src="js/signup.js"></script>

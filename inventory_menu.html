@@ -9,21 +9,18 @@
 <body background="images/background_texture.png">
     <div id="header">
         <button id="logout">Log out</button>
-
     </div>
     <div class="main">
         <div class="wrapper">
             <div id="items">
                 <div id="shoes" class="card">
-                    <img src = "images/shoes.png">
-                    
+                    <img src="images/shoes.png">
                 </div>
                 <div id="jeans" class="card">
-                    <img src = "images/jeans.png">
-                    
+                    <img src="images/jeans.png">
                 </div>
                 <div id="coats" class="card">
-                    <img src = "images/coats.png">
+                    <img src="images/coats.png">
                 </div>
             </div>
         </div>
@@ -31,3 +28,18 @@
 </body>
 
 </html>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+<script>
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyD7G36cH9ipnDhyzzWwRn88VJX_QCDMlt4",
+        authDomain: "xxi-database.firebaseapp.com",
+        projectId: "xxi-database",
+        storageBucket: "xxi-database.appspot.com",
+        messagingSenderId: "261738957905",
+        appId: "1:261738957905:web:c7b66cf99da05453effc70"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="js/inventory_menu.js"></script>

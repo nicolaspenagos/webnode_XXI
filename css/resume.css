@@ -71,8 +71,8 @@ div#mainTitle{
 }
 
 div#title{
-    font-size: x-large;
     font-family: 'Roboto', sans-serif;
+    font-size: x-large;
     padding-left: 10px;
     border-radius: 9px;
     height: 40px;
