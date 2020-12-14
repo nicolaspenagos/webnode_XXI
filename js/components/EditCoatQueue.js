@@ -13,7 +13,7 @@
  **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
- class EditShoeQueue{
+class EditCoatQueue{
 
     constructor(product){
         this.product = product;
@@ -65,18 +65,66 @@
         lessSizeButton.addEventListener('click', ()=>{
 
             let x = sizeLabel.innerHTML;
-            if(x>7){
-                x--;
-                sizeLabel.innerHTML = x;
+            let y;
+            if(x=='xs'){
+                y=1;
+            }else if(x=='s'){
+                y=2;
+            }else if(x=='m'){
+                y=3;
+            }else if(x=='l'){
+                y=4;
+            }else if(x=='xl'){
+                y=5;
+            }
+
+            if(y>1){
+                y--;
+            }
+
+            if(y==1){
+                sizeLabel.innerHTML='xs';
+            }else if(y==2){
+                sizeLabel.innerHTML='s';
+            }else if(y==3){
+                sizeLabel.innerHTML='m';
+            }else if(y==4){
+                sizeLabel.innerHTML='l';
+            }else if(y==5){
+                sizeLabel.innerHTML='xl';
             }
 
         });
 
         moreSizeButton.addEventListener('click', ()=>{
-            let y = sizeLabel.innerHTML;
-            if(y<13){
+            let x = sizeLabel.innerHTML;
+            let y;
+            if(x=='xs'){
+                y=1;
+            }else if(x=='s'){
+                y=2;
+            }else if(x=='m'){
+                y=3;
+            }else if(x=='l'){
+                y=4;
+            }else if(x=='xl'){
+                y=5;
+            }
+
+            if(y<5){
                 y++;
-                sizeLabel.innerHTML = y;
+            }
+
+            if(y==1){
+                sizeLabel.innerHTML='xs';
+            }else if(y==2){
+                sizeLabel.innerHTML='s';
+            }else if(y==3){
+                sizeLabel.innerHTML='m';
+            }else if(y==4){
+                sizeLabel.innerHTML='l';
+            }else if(y==5){
+                sizeLabel.innerHTML='xl';
             }
 
         });
@@ -156,7 +204,7 @@
                 quantity: qLabel.innerHTML
             }
 
-            database.ref('products/shoes/'+object.productId).set(object);
+            database.ref('products/coats/'+object.productId).set(object);
 
         });
 

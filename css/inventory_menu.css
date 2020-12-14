@@ -13,7 +13,6 @@
  **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-
 /*
 * Styles
 */
@@ -55,7 +54,7 @@ div#header{
     height: 300px;
     margin: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
    
 }
 

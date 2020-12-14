@@ -13,7 +13,7 @@
  **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
- class EditShoeQueue{
+class EditPantsQueue{
 
     constructor(product){
         this.product = product;
@@ -65,7 +65,8 @@
         lessSizeButton.addEventListener('click', ()=>{
 
             let x = sizeLabel.innerHTML;
-            if(x>7){
+            if(x>28){
+                x--;
                 x--;
                 sizeLabel.innerHTML = x;
             }
@@ -74,8 +75,9 @@
 
         moreSizeButton.addEventListener('click', ()=>{
             let y = sizeLabel.innerHTML;
-            if(y<13){
-                y++;
+            if(y<38){
+                 y++;
+                 y++;
                 sizeLabel.innerHTML = y;
             }
 
@@ -156,7 +158,7 @@
                 quantity: qLabel.innerHTML
             }
 
-            database.ref('products/shoes/'+object.productId).set(object);
+            database.ref('products/pants/'+object.productId).set(object);
 
         });
 

@@ -63,7 +63,7 @@ logout.addEventListener('click', ()=>{
 });
 
 editInvetory.addEventListener('click', () => {
-    window.location.href = 'inventory_menu.html';
+    window.location.href = 'product_options.html';
 });
 
 viewResume.addEventListener('click', () => {

@@ -22,28 +22,14 @@ const auth = firebase.auth();
 // -------------------------------------
 // DECLARATIONS
 // -------------------------------------
-const itemsContainer = document.getElementById('itemsContainer');
 const logout = document.getElementById('logout');
-const goBack = document.getElementById('goBack');
+const shoeButton = document.getElementById('shoes');
+const coatButton = document.getElementById('coats');
+const jeanButton = document.getElementById('jeans');
 
 // -------------------------------------
-// DATA READING
+// EVENTS
 // -------------------------------------
-database.ref('products/shoes/').on('value', function(data){
-
-    itemsContainer.innerHTML = '';
-    data.forEach(
-        currentShoe => {
-
-            let val = currentShoe.val();
-            let shoeQueue = new EditShoeQueue(val);
-            itemsContainer.appendChild(shoeQueue.render());
-
-        }
-    );
-
-});
-
 logout.addEventListener('click', ()=>{
 
     auth.signOut().then(
@@ -60,6 +46,14 @@ logout.addEventListener('click', ()=>{
 
 });
 
-goBack.addEventListener('click', ()=>{
-    window.location.href = "index.html";
+shoeButton.addEventListener('click', ()=>{
+    window.location.href = 'edit_shoe.html';
+});
+
+coatButton.addEventListener('click', ()=>{
+    window.location.href = 'edit_coat.html';
+});
+
+jeanButton.addEventListener('click', ()=>{
+    window.location.href = 'edit_pant.html';
 });

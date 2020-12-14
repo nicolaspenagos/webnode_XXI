@@ -24,15 +24,20 @@ const auth = firebase.auth();
 // -------------------------------------
 const goBack = document.getElementById('goBack');
 const logout = document.getElementById('logout');
+const addButton = document.getElementById('addButton');
+const nameI = document.getElementById('nameI');
+const size = document.getElementById('sizeS');
+const quantity = document.getElementById('quantityS');
+const price = document.getElementById('priceI');
 
 // -------------------------------------
 // EVENTS
 // -------------------------------------
-goBack.addEventListener('click', ()=>{
+goBack.addEventListener('click', () => {
     window.location.href = "index.html";
 });
 
-logout.addEventListener('click', ()=>{
+logout.addEventListener('click', () => {
 
     auth.signOut().then(
 
@@ -43,6 +48,28 @@ logout.addEventListener('click', ()=>{
     ).catch(
         (error) => {
             alert(error.message);
+        }
+    );
+
+});
+
+addButton.addEventListener('click', () => {
+
+    let ref = database.ref('products/pants/').push();
+
+    let object = {
+        productId: ref.key,
+        name: nameI.value,
+        size: size.value,
+        price: price.value,
+        quantity: quantity.value
+    }
+
+    ref.set(object).then(
+        () => {
+            nameI.value = '';
+            price.value = '';
+            window.location.href = 'index.html';
         }
     );
 

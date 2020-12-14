@@ -22,28 +22,30 @@ const auth = firebase.auth();
 // -------------------------------------
 // DECLARATIONS
 // -------------------------------------
-const itemsContainer = document.getElementById('itemsContainer');
-const logout = document.getElementById('logout');
-const goBack = document.getElementById('goBack');
+const logout =  document.getElementById('logout');
+const addButton = document.getElementById('add');
+const editButton = document.getElementById('edit');
 
 // -------------------------------------
-// DATA READING
+// USER AUTHENTICATION
 // -------------------------------------
-database.ref('products/shoes/').on('value', function(data){
+auth.onAuthStateChanged(
 
-    itemsContainer.innerHTML = '';
-    data.forEach(
-        currentShoe => {
+    (user) => {
 
-            let val = currentShoe.val();
-            let shoeQueue = new EditShoeQueue(val);
-            itemsContainer.appendChild(shoeQueue.render());
-
+        if(user!=null){
+        
+        }else{
+            window.location.href = 'login.html';
         }
-    );
 
-});
+    }
+   
+);
 
+// -------------------------------------
+// EVENTS
+// -------------------------------------
 logout.addEventListener('click', ()=>{
 
     auth.signOut().then(
@@ -60,6 +62,10 @@ logout.addEventListener('click', ()=>{
 
 });
 
-goBack.addEventListener('click', ()=>{
-    window.location.href = "index.html";
+addButton.addEventListener('click', ()=>{
+    window.location.href = 'inventory_menu.html';
+});
+
+editButton.addEventListener('click', ()=>{
+    window.location.href = 'inventory_menu_edit.html';
 });

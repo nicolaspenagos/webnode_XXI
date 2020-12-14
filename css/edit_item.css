@@ -13,7 +13,6 @@
  **~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 
-
 /*
 * Styles
 */
@@ -58,6 +57,7 @@ div#items{
     height: 600px;
     margin: 0 auto;
     border-radius: 9px;
+    overflow-y: scroll;
 }
 
 div#mainTitle{
@@ -209,8 +209,8 @@ div#salesContainer{
 }
 
 .saveButton{
-    height: 20px;
-    width: 580px;
+    height: 30px;
+    width: 565px;
     background-color: #222222;
     color: white;
     border: 1px solid white;
