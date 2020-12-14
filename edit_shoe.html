@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>XXI</title>
+    <title>Edit Inventory</title>
     <link rel="stylesheet" href="css/edit_item.css">
 </head>
 
@@ -13,14 +13,16 @@
     <div class="main">
         <div class="wrapper">
             <div id="items">
-                <div id="shoes" class="card">
-                    <img src="images/shoes.png">
+                <div id="mainTitle">
+                    <div id="title">
+                        Edit inventory
+                    </div>
+                    <div id="goBack">
+                        <img src="images/go_back.png">
+                    </div>
                 </div>
-                <div id="jeans" class="card">
-                    <img src="images/jeans.png">
-                </div>
-                <div id="coats" class="card">
-                    <img src="images/coats.png">
+                <div id="itemsContainer">
+
                 </div>
             </div>
         </div>
@@ -42,4 +44,7 @@
 
     firebase.initializeApp(firebaseConfig);
 </script>
-<script src="js/inventory_menu.js"></script>
+<script src = "js/components/EditShoeQueue.js"></script> 
+<script src = "js/edit_shoe.js"></script>
+
+
